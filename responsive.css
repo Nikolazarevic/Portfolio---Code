@@ -1,0 +1,32 @@
+@media screen and (max-width: 1024px) {
+  #container .aboutMe-professional .floatContent .myImage img {
+    width: 100px;
+    height: 100px; }
+  #container .aboutMe-professional .floatContent .aboutMeF p {
+    font-size: 14px; }
+  #container .aboutMe-professional #professional .innerProfessional #titleProfessional h1 {
+    font-size: 39px; }
+  #container .aboutMe-professional #professional .innerProfessional #titleProfessional h4 {
+    font-size: 22px; }
+  #container .portfolio .innerPortfolio .titleWorks h1 {
+    font-size: 39px; }
+  #container .portfolio .innerPortfolio .titleWorks h4 {
+    font-size: 22px; }
+  #container .experience-contact .experience .innerExperience #titleExperience h1 {
+    font-size: 39px; }
+  #container .experience-contact .experience .innerExperience .firstJob .info .year h3 {
+    font-size: 15px; }
+  #container .experience-contact .experience .innerExperience .firstJob .info .company h2 {
+    font-size: 21px; }
+  #container .experience-contact .experience .innerExperience .firstJob .info .position h3 {
+    font-size: 14px; }
+  #container .experience-contact .experience .innerExperience .firstJob .info .description p {
+    font-size: 14px; }
+  #container .experience-contact #contact .leftSide .titleLS h2 {
+    font-size: 21px; }
+  #container .experience-contact #contact .leftSide .contentLS p {
+    font-size: 14px; }
+  #container .experience-contact #contact .leftSide .infoLS h4 {
+    font-size: 14px; } }
+
+/*# sourceMappingURL=responsive.css.map */

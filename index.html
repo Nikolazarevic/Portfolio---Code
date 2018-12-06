@@ -4,9 +4,12 @@
 	<meta charset="UTF-8">
 	<title>Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="responsive1.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<script
   src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Francois+One" rel="stylesheet">
 	<script src="main.js"></script>
 </head>
 <body>
@@ -14,11 +17,11 @@
 	<div id="header">
 		<div class="nav">
 			<div class="navBar">
-				<div class="menu"><a href="">HOME</a></div>
-				<div class="menu"><a href="">PROFESSIONAL</a></div>
-				<div class="menu"><a href="">EXPERIENCE</a></div>
-				<div class="menu"><a href="">PORTFOLIO</a></div>
-				<div class="menu"><a href="">CONTACT</a></div>
+				<div class="menu"><a href="#container">HOME</a></div>
+				<div class="menu"><a href="#titleProfessional">PROFESSIONAL</a></div>
+				<div class="menu"><a href="#titleExperience">EXPERIENCE</a></div>
+				<div class="menu"><a href="#experience-contact">PORTFOLIO</a></div>
+				<div class="menu"><a href="#contact">CONTACT</a></div>
 			</div>
 		</div>	
 	</div> <!-- END OF HEADER -->
@@ -43,10 +46,10 @@
 				</div>
 				<button class="downloadCv">DOWNLOAD RESUME</button>
 			</div>
-			<div class="professional">
+			<div id="professional">
 				<div class="bcgP"></div>
 				<div class="innerProfessional">
-					<div class="titleProfessional">
+					<div id="titleProfessional">
 						<h1><span>01</span> PROFESSIONAL</h1>
 						<h4>MY KNOWLEDGE LEVEL IN SOFTWARE</h4>
 					</div>
@@ -72,7 +75,7 @@
 							<div class="progressValue">30%</div>
 						</div>
 						<div class="progressBar">
-							<div class="title HTMLColor">Microsoft Of.</div>
+							<div class="title HTMLColor">MS</div>
 							<div class="progress microsoft"></div>
 							<div class="progressValue">95%</div>
 						</div>
@@ -131,17 +134,38 @@
 		</div><!-- END OF PORTFOLIO -->
 
 
-		<!-- PORTFOLIO -->
+		<!-- EXPERIENCE AND CONTACT -->
+		
 		<div class="experience-contact">
 			<div class="experience">
 				<div class="bcgE"></div>
 				<div class="innerExperience">
-					<div class="titleExperience">
+					<div id="titleExperience">
 						<h1><span>03</span> EXPERIENCE</h1>
+					</div>
+					<div class="firstJob">
+						<div class="info">
+							<div class="year">
+								<h3>2018-2018</h3>
+							</div>
+							<div class="company">
+								<h2>ProDevs</h2>
+							</div>
+							<div class="position">
+								<h3>UI/UX Design</h3>
+							</div>
+							<div class="description">
+								<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own.</p>
+							</div>
+						</div>
+						<div class="scale">
+							<div class="dot"></div>
+							<div class="line"></div>
+						</div>
 					</div>
 				</div>		
 			</div>
-			<div class="contact">
+			<div id="contact">
 				<div class="leftSide">
 					<div class="titleLS">
 						<h2>CONTACT</h2>
