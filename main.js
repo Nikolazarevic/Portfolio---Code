@@ -7,6 +7,20 @@ $(document).ready(function() {
     $('#header').removeClass('shrink');
     }
   });
+// 	var fas = $('.fas');
+// 	klik = 0;
+// 	boja();
+// 	function boja() {
+// 	fas.on('click', function(){
+// 		klik++;
+//         $('.navBar').slideToggle('slow');
+//         $('.toggle').css('background-color','rgba(23, 28, 37, 0.9)');
+//     if (klik == 2) {
+//         $('.toggle').delay('500').css('background-color','transparent');
+//     	klik = 0;
+//     }
+//     });
+// }
 // 	$('.html').animate({width: '95%'}, 4000);
 // 	$('.css').animate({width: '95%'}, 4000);
 // 	$('.jQuery').animate({width: '40%'}, 4000);
@@ -19,4 +33,15 @@ $(document).ready(function() {
 // 	$('.sass').animate({width: '95%'}, 4000);
 // 	$('.ajax').animate({width: '20%'}, 4000);
 // 	$('.git').animate({width: '20%'}, 4000);
+	clicked = true;
+	$('.fas').on('click', function() {
+		$('.navBar').slideToggle('slow');
+		// if(clicked) {
+		// 	$('.toggle').css('background-color', 'red');
+		// 	clicked = false;
+		// } else {
+		// 	$('.toggle').css('background-color', 'transparent');
+		// 	clicked = true;
+		// }
+	});
 });

@@ -54,5 +54,50 @@
 					.infoLS
 						h4
 							font-size: 14px
+@media screen and (max-width: 768px)
+	#header
+		.nav
+			width: 100%
+			.toggle
+				display: block
+				i
+					cursor: pointer
+					font-size: 30px
+					color: #ffffff
 
+			.navBar
+				display: none
+				width: 100%
+				background-color: rgba(23, 28, 37, 0.9)
+				.menu
+					width: 100%
+					display: block
+					text-align: center
+					padding: 15px 0
+					a
+						cursor: pointer
+						color: #ffffff
+						&:hover
+							color: #91a0ba
+			.active
+				display: block
+	#container
+		.aboutMe-professional
+			.floatContent
+				grid-column: 3/19
+			#professional
+				.innerProfessional
+					#titleProfessional
+						grid-column: 2/16
+		.portfolio
+			.innerPortfolio
+				.titleWorks
+					grid-row: 4/7
+				.myWorks
+					grid-row: 8/13
+		.experience-contact
+			#contact	
+				grid-row: 12/21
+				grid-column: 3/19
 
+		

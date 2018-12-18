@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
 	<title>Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="responsive.css">
@@ -9,10 +11,13 @@
   src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Francois+One" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<script src="main.js"></script>
 </head>
 <body>
+
 	<!-- HEADER -->
+
 	<div id="header">
 		<div class="nav">
 			<div class="navBar">
@@ -22,13 +27,17 @@
 				<div class="menu"><a href="#experience-contact">PORTFOLIO</a></div>
 				<div class="menu"><a href="#contact">CONTACT</a></div>
 			</div>
+			<div class="toggle"><i class="fas fa-bars"></i></div>
 		</div>	
 	</div> <!-- END OF HEADER -->
 
 	<!-- CONTAINER -->
+
 	<div id="container">
-		<!-- ABOUT ME -->
 		<div class="aboutMe-professional">
+
+			<!-- ABOUT ME -->
+
 			<div class="aboutMe">
 				<div class="innerAboutMe">
 					<div class="name">
@@ -38,13 +47,19 @@
 						<h2>UX/UI DESIGNER & WEB DEVELOPER</h2>
 					</div>
 				</div>
-			</div>
+			</div> <!-- END OF ABOUT ME -->
+
+			<!-- FLOAT CONTENT -->
+
 			<div class="floatContent">
 				<div class="myImage"><img src="Images/my-pictures.png" alt=""></div>
 				<div class="aboutMeF"><p>I'M A PARAGRAPH. CLICK HERE TO ADD YOUR OWN TEXT AND EDIT ME. IT’S EASY. JUST CLICK “EDIT TEXT” OR DOUBLE CLICK ME TO ADD YOUR OWN CONTENT AND MAKE CHANGES TO THE FONT. FEEL FREE TO DRAG AND DROP ME ANYWHERE YOU LIKE ON YOUR PAGE.</p>
 				</div>
 				<button class="downloadCv">DOWNLOAD RESUME</button>
-			</div>
+			</div> <!-- END OF CONTENT -->
+
+			<!-- PROFESSIONAL -->
+
 			<div id="professional">
 				<div class="bcgP"></div>
 				<div class="innerProfessional">
@@ -115,9 +130,11 @@
 						</div>
 					</div>
 				</div>
-			</div>
-		</div> <!-- END OF ABOUT ME AND PROFESSIONAL -->
+			</div> <!-- PROFESSIONAL -->
+		</div> 
+
 		<!-- PORTFOLIO -->
+
 		<div class="portfolio">
 			<div class="innerPortfolio">
 				<div class="titleWorks">
@@ -151,7 +168,7 @@
 								<h2>ProDevs</h2>
 							</div>
 							<div class="position">
-								<h3>UI/UX Design</h3>
+								<h3>UI Design</h3>
 							</div>
 							<div class="description">
 								<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own.</p>
@@ -201,7 +218,7 @@
 				</div>
 			</div>
 			<div class="bcgFooter"></div>
-		</div><!-- END OF PORTFOLIO -->
+		</div><!-- END EXPERIENCE AND CONTACT -->
 
 
 
@@ -210,16 +227,7 @@
 		<!-- FOOTER -->
 		<div class="content footer">
 			<p>Copyright 2018 Nikola Lazarevic. All rights reserved.</p>
-
-
 		</div><!-- END OF FOOTER -->
-
-
-
-
-
-
-
 	</div> <!-- END OF CONTAINER -->
 </body>
 </html>
