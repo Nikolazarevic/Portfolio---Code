@@ -4,17 +4,10 @@
 #header
 	width: 100%
 	height: 70px
-	// background-color: #171C25
 	text-align: center
-	font-size: 2em
-	line-height: 70px
 	display: grid
-	grid-template-columns: repeat(20,1fr)
-	//grid-auto-rows: minmax(70px, auto)
 	position: fixed
-	// box-shadow: 0 0 10px 0
 	transition: all ease .5s
-	// display: none
 	&.shrink
 		background-color: #171C25
 		height: 50px
@@ -26,32 +19,28 @@
 				.menu
 					line-height: 40px
 					a
-						// color: red
 						font-size: 12px
 	.nav
-		grid-column: 3/19
-		//grid-row: 1/2
-		// background-color: red
-		display: grid
-		// grid-template-columns: repeat(16, 1fr)
-		//grid-template-columns: repeat(1, 1fr)
-		grid-template-rows: repeat(1, 1fr)
+		margin: 0 auto
+		.toggle
+			width: 100%
+			padding: 0 20px
+			box-sizing: border-box
+			color: #000000
+			display: none
 		.navBar
-			grid-row: 1/2
-			// grid-column: 6/12
-			//grid-column: 1/2
+			height: 100%
 			display: grid
 			grid-template-rows: repeat(1, 1fr)
 			grid-auto-columns: minmax(auto, auto)
 			white-space: nowrap
-			// background-color: green
 			grid-column-gap: 40px
 			margin: 0 auto
 			.menu
-				// grid-column: 1/auto
 				grid-row: 1/2
+				align-self: center
 				a
-					font-size: 14px
+					font-size: 2.3vh
 					color: #ffffff
 					text-decoration: none
 					&:hover
@@ -61,15 +50,13 @@
 	width: 100%
 	height: auto
 	display: grid
-	grid-template-columns: repeat(16, 1fr)
+	// grid-template-columns: repeat(16, 1fr)
 	grid-auto-rows: 330vh 100vh 230vh 70px
-	//background-color: red
 	.aboutMe-professional
-		grid-column: 1/17
+		width: 100%
 		display: grid
 		grid-template-columns: repeat(20, 1fr)
 		grid-template-rows: repeat(44, 1fr)
-		// background-color: #ff9900
 		.aboutMe
 			grid-row: 1/22
 			grid-column: 1/21
@@ -84,29 +71,27 @@
 				grid-row: 1/2
 				grid-column: 3/19
 				display: grid
-				grid-template-columns: repeat(16, 1fr)
+				// grid-template-columns: repeat(16, 1fr)
 				grid-template-rows: repeat(16, 1fr)
-				//background-color: #ff9900
 				overflow: hidden
+				justify-content: center
 				.name
-					text-align: Left
+					width: 100%
 					grid-row: 4/9
-					grid-column: 5/13
+					text-align: Left
 					p
 						letter-spacing: 10px
 						color: #ffffff
 						font-weight: bold
 						line-height: 1.5
-						// font-family: 'Francois One', sans-serif
 						font-family: 'Archivo Black', sans-serif
 						font-size: 10vh
 				.profession
+					width: 100%
 					grid-row: 9/10
-					grid-column: 5/13
 					text-align: Left
 					align-self: end
 					h2
-						//font-size: 25px
 						font-size: 3.8vh
 						font-family: "Open Sans"
 						font-weight: Lighter
@@ -120,26 +105,23 @@
 			grid-template-rows: repeat(16, 1fr)
 			grid-template-columns: repeat(16, 1fr)
 			.myImage
-				grid-row: 2/6
-				grid-column: 7/11
-				// background-color: red
+				grid-row: 3/6
+				grid-column: 8/10
 				text-align: center
-				// img
-				// 	width: 100%
-				// 	height: 100%
+				img
+					width: 100%
 			.aboutMeF
 				grid-row: 6/13
 				grid-column: 1/17
-				// background-color: blue
 				text-align: center
 				display: grid
 				grid-template-columns: repeat(16, 1fr)
 				grid-template-rows: repeat(10, 1fr)
+				align-self: center
 				p
 					grid-row: 3/9
 					grid-column: 4/14
-					// font-size: 17px
-					font-size: 17px
+					font-size: 16px
 					color: #ffffff
 			.downloadCv
 				grid-row: 13/15
@@ -149,7 +131,6 @@
 				color: #ffffff
 				font-weight: bold
 				&:hover
-					//background-color: #91a0ba
 					color: #91a0ba
 					cursor: pointer
 					border: none
@@ -170,50 +151,43 @@
 			.innerProfessional
 				grid-row: 1/2
 				grid-column: 3/19
-				// background-color: #999966
 				display: grid
 				grid-template-columns: repeat(16, 1fr)
 				grid-template-rows: repeat(17, 1fr)
 				overflow: hidden
 				#titleProfessional
 					grid-column: 3/15
-					grid-row: 6/8
+					grid-row: 5/7
 					text-align: center
 					color: #ffffff
+					align-self: end
 					span
 						color: #B4C2D1
 					h1
 						font-size: 45px
-						// font-size: 7vh
 						font-weight: 900
 						font-family: "Open Sans"
 						letter-spacing: 6px
 					h4
 						font-size: 25px
-						// font-size: 4vh
 						font-family: "Open Sans"
 						font-weight: Lighter
 						margin-top: 10px
 				.knowledge
 					grid-column: 3/15
-					grid-row: 9/17
+					grid-row: 8/17
 					grid-row-gap: 15px
-					// background-color: blue
 					display: grid
 					grid-template-columns: repeat(1, 1fr)
 					grid-template-rows: repeat(12, 1fr)
 					.progressBar
 						grid-column: 1/2
-						// background-color: red
-						// border-radius: 5px
-						// box-shadow: 0 1px 2px #222222
 						display: grid
 						grid-template-columns: repeat(16, 1fr)
 						grid-template-rows: repeat(3, 1fr)
 						.title
 							grid-row: 1/4
 							grid-column: 1/3
-							// background-color: yellow
 							text-align: right
 							color: #ffffff
 							align-self: center
@@ -224,12 +198,11 @@
 						.progressValue
 							grid-row: 1/4
 							grid-column: 15/17
-							// background-color: silver
 							text-align: center
 							color: #ffffff
 							align-self: center
 	.portfolio 
-		grid-column: 1/17
+		width: 100%
 		text-align: center
 		background-color: #171C25
 		display: grid
@@ -238,7 +211,6 @@
 		.innerPortfolio
 			grid-row: 1/2
 			grid-column: 3/19
-			//background-color: #333399
 			display: grid
 			grid-template-columns: repeat(16, 1fr)
 			grid-template-rows: repeat(16, 1fr)
@@ -248,7 +220,6 @@
 				grid-column: 3/15
 				text-align: center
 				h1
-					// grid-row: 3/6
 					font-size: 45px
 					font-weight: 900
 					font-family: "Open Sans"
@@ -257,7 +228,6 @@
 					span
 						color: #B4C2D1
 				h4
-					// grid-row: 6/7
 					font-size: 20px
 					letter-spacing: 2px
 					color: #ffffff
@@ -271,14 +241,12 @@
 			.myWorks
 				grid-row: 7/15
 				grid-column: 1/17
-				//background-color: #006699
 				display: grid
 				grid-template-rows: repeat(10, 1fr)
 				grid-template-columns: repeat(21, 1fr)
 				.work1
 					grid-row: 1/10
 					grid-column: 1/8
-					// background-color: #ff9900
 					&:hover
 						cursor: pointer
 					img
@@ -328,17 +296,14 @@
 				.firstJob
 					grid-row: 4/12
 					grid-column: 3/15
-					// background-color: red
 					display: grid
 					grid-template-rows: repeat(10, 1fr)
 					grid-template-columns: repeat(16, 1fr)
 					.info
 						grid-row: 1/11
 						grid-column: 1/6
-						// background: blue
 						display: grid
 						grid-template-rows: repeat(16, 1fr)
-						// grid-template-columns: repeat(16, 1fr)
 						text-align: right
 						grid-row-gap: 5px
 						color: #ffffff
@@ -376,7 +341,6 @@
 							grid-row: 3/14
 							grid-column: 1/2
 							width: 4px
-							// background-color: #006699
 							background-image: linear-gradient(rgba(0, 102, 153, 0.1), #006699)
 		#contact
 			grid-row: 12/22
@@ -389,7 +353,6 @@
 			.leftSide
 				grid-row: 1/14
 				grid-column: 1/9
-				// background-color: red
 				display: grid
 				grid-template-rows: repeat(10, 1fr)
 				grid-template-columns: repeat(16, 1fr)
@@ -417,14 +380,12 @@
 			.rightSide
 				grid-row: 1/14
 				grid-column: 9/17
-				// background-color: blue
 				display: grid
 				grid-template-rows: repeat(10, 1fr)
 				grid-template-columns: repeat(16, 1fr)
 				.innerRight
 					grid-row: 3/10
 					grid-column: 1/14
-					// background-color: red
 					display: grid
 					grid-template-rows: repeat(10, 1fr)
 					grid-template-columns: repeat(13, 1fr)
@@ -476,7 +437,6 @@
 			.bottom
 				grid-row: 14/17
 				grid-column: 1/17
-				// background-color: green
 				text-align: center
 				align-self: center
 				img
@@ -487,13 +447,13 @@
 			grid-row: 16/31
 			grid-column: 1/21
 			background-image: url("Images/Web-Design-Wallpapers-1-1.png")
-			background-size: cover
+			background-size: 100% 100%
 			background-attachment: fixed
 			display: grid
 			grid-template-rows: repeat(1, 1fr)
 			grid-template-columns: repeat(20, 1fr)
 	.footer 
-		grid-column: 1/17
+		width: 100%
 		height: 70px
 		text-align: center
 		background-color: #171C25
