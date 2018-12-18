@@ -174,5 +174,12 @@
       #container .experience-contact #contact .rightSide {
         grid-row: 9/17;
         grid-column: 1/17; } }
+@media screen and (max-width: 425px) {
+  #container .aboutMe-professional .aboutMe .innerAboutMe {
+    grid-column: 2/20; }
+    #container .aboutMe-professional .aboutMe .innerAboutMe .name {
+      grid-row: 4/7; }
+      #container .aboutMe-professional .aboutMe .innerAboutMe .name p {
+        font-size: 5.5vh; } }
 
 /*# sourceMappingURL=responsive.css.map */
