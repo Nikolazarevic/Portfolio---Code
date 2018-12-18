@@ -65,5 +65,109 @@
   #container .experience-contact #contact {
     grid-row: 12/21;
     grid-column: 3/19; } }
+@media screen and (max-width: 425px) {
+  #container {
+    grid-auto-rows: 330vh 150vh 230vh 70px; }
+    #container .aboutMe-professional .aboutMe .innerAboutMe {
+      grid-column: 2/20; }
+      #container .aboutMe-professional .aboutMe .innerAboutMe .name {
+        grid-row: 4/7; }
+        #container .aboutMe-professional .aboutMe .innerAboutMe .name p {
+          font-size: 6vh; }
+      #container .aboutMe-professional .aboutMe .innerAboutMe .profession {
+        grid-row: 7/8; }
+        #container .aboutMe-professional .aboutMe .innerAboutMe .profession h2 {
+          line-height: 1.5; }
+    #container .aboutMe-professional .floatContent {
+      grid-column: 2/20; }
+      #container .aboutMe-professional .floatContent .myImage {
+        grid-column: 6/12; }
+      #container .aboutMe-professional .floatContent .aboutMeF p {
+        grid-column: 3/15; }
+      #container .aboutMe-professional .floatContent .downloadCv {
+        grid-column: 5/13; }
+    #container .aboutMe-professional #professional .innerProfessional #titleProfessional {
+      grid-row: 5/7;
+      grid-column: 1/17; }
+      #container .aboutMe-professional #professional .innerProfessional #titleProfessional h1 {
+        font-size: 25px; }
+      #container .aboutMe-professional #professional .innerProfessional #titleProfessional h4 {
+        font-size: 20px; }
+    #container .aboutMe-professional #professional .innerProfessional .knowledge {
+      grid-column: 2/16; }
+      #container .aboutMe-professional #professional .innerProfessional .knowledge .progressBar {
+        overflow: hidden;
+        grid-row-gap: 7px; }
+        #container .aboutMe-professional #professional .innerProfessional .knowledge .progressBar .title {
+          grid-row: 1/2;
+          grid-column: 1/17;
+          text-align: left; }
+        #container .aboutMe-professional #professional .innerProfessional .knowledge .progressBar .progress {
+          grid-row: 2/4;
+          grid-column: 1/14; }
+        #container .aboutMe-professional #professional .innerProfessional .knowledge .progressBar .progressValue {
+          grid-row: 2/4;
+          grid-column: 15/17; }
+    #container .portfolio .innerPortfolio {
+      grid-column: 2/20; }
+      #container .portfolio .innerPortfolio .titleWorks {
+        grid-row: 2/4;
+        grid-column: 1/17; }
+        #container .portfolio .innerPortfolio .titleWorks h1 {
+          font-size: 25px; }
+        #container .portfolio .innerPortfolio .titleWorks h4 {
+          font-size: 20px; }
+      #container .portfolio .innerPortfolio .myWorks {
+        grid-row: 4/17;
+        grid-template-rows: repeat(13, 1fr); }
+        #container .portfolio .innerPortfolio .myWorks .work1 {
+          grid-row: 1/5;
+          grid-column: 1/22; }
+        #container .portfolio .innerPortfolio .myWorks .work2 {
+          grid-row: 5/9;
+          grid-column: 1/22; }
+        #container .portfolio .innerPortfolio .myWorks .work3 {
+          grid-row: 9/13;
+          grid-column: 1/22; }
+    #container .experience-contact .experience .innerExperience {
+      grid-column: 2/20; }
+      #container .experience-contact .experience .innerExperience #titleExperience {
+        grid-column: 1/17; }
+        #container .experience-contact .experience .innerExperience #titleExperience h1 {
+          font-size: 25px; }
+      #container .experience-contact .experience .innerExperience .firstJob {
+        grid-row: 3/8;
+        grid-column: 1/17; }
+        #container .experience-contact .experience .innerExperience .firstJob .info {
+          grid-column: 1/17;
+          text-align: left; }
+          #container .experience-contact .experience .innerExperience .firstJob .info .year {
+            grid-row: 10/11;
+            letter-spacing: 1px; }
+          #container .experience-contact .experience .innerExperience .firstJob .info .company {
+            grid-row: 1/4; }
+            #container .experience-contact .experience .innerExperience .firstJob .info .company h2 {
+              font-size: 23px;
+              letter-spacing: 1px; }
+          #container .experience-contact .experience .innerExperience .firstJob .info .position {
+            grid-row: 4/6; }
+            #container .experience-contact .experience .innerExperience .firstJob .info .position h3 {
+              font-size: 16px;
+              letter-spacing: 1px; }
+          #container .experience-contact .experience .innerExperience .firstJob .info .description {
+            grid-row: 6/10; }
+            #container .experience-contact .experience .innerExperience .firstJob .info .description p {
+              font-size: 16px; }
+        #container .experience-contact .experience .innerExperience .firstJob .scale {
+          display: none; }
+    #container .experience-contact #contact {
+      grid-row: 8/22;
+      grid-column: 2/20; }
+      #container .experience-contact #contact .leftSide {
+        grid-row: 1/9;
+        grid-column: 1/17; }
+      #container .experience-contact #contact .rightSide {
+        grid-row: 9/17;
+        grid-column: 1/17; } }
 
 /*# sourceMappingURL=responsive.css.map */
