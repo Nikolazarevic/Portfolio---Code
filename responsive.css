@@ -84,31 +84,35 @@
         grid-column: 6/12; }
       #container .aboutMe-professional .floatContent .aboutMeF p {
         grid-column: 3/15;
-        font-size: 12px; }
+        font-size: 13px; }
       #container .aboutMe-professional .floatContent .downloadCv {
         grid-column: 4/14; }
-    #container .aboutMe-professional #professional .innerProfessional #titleProfessional {
-      grid-row: 5/7;
-      grid-column: 1/17; }
-      #container .aboutMe-professional #professional .innerProfessional #titleProfessional h1 {
-        font-size: 25px; }
-      #container .aboutMe-professional #professional .innerProfessional #titleProfessional h4 {
-        font-size: 20px; }
-    #container .aboutMe-professional #professional .innerProfessional .knowledge {
-      grid-column: 2/16; }
-      #container .aboutMe-professional #professional .innerProfessional .knowledge .progressBar {
-        overflow: hidden;
-        grid-row-gap: 5px; }
-        #container .aboutMe-professional #professional .innerProfessional .knowledge .progressBar .title {
-          grid-row: 1/2;
-          grid-column: 1/17;
-          text-align: left; }
-        #container .aboutMe-professional #professional .innerProfessional .knowledge .progressBar .progress {
-          grid-row: 2/4;
-          grid-column: 1/14; }
-        #container .aboutMe-professional #professional .innerProfessional .knowledge .progressBar .progressValue {
-          grid-row: 2/4;
-          grid-column: 15/17; }
+    #container .aboutMe-professional #professional .innerProfessional {
+      grid-column: 2/20; }
+      #container .aboutMe-professional #professional .innerProfessional #titleProfessional {
+        grid-row: 5/7;
+        grid-column: 1/17; }
+        #container .aboutMe-professional #professional .innerProfessional #titleProfessional h1 {
+          font-size: 23px; }
+        #container .aboutMe-professional #professional .innerProfessional #titleProfessional h4 {
+          font-size: 20px; }
+      #container .aboutMe-professional #professional .innerProfessional .knowledge {
+        grid-column: 2/16; }
+        #container .aboutMe-professional #professional .innerProfessional .knowledge .progressBar {
+          overflow: hidden;
+          grid-row-gap: 1px; }
+          #container .aboutMe-professional #professional .innerProfessional .knowledge .progressBar .title {
+            grid-row: 1/2;
+            grid-column: 1/17;
+            text-align: left;
+            font-size: 14px; }
+          #container .aboutMe-professional #professional .innerProfessional .knowledge .progressBar .progress {
+            grid-row: 2/4;
+            grid-column: 1/14; }
+          #container .aboutMe-professional #professional .innerProfessional .knowledge .progressBar .progressValue {
+            grid-row: 2/4;
+            grid-column: 15/17;
+            font-size: 14px; }
     #container .portfolio .innerPortfolio {
       grid-column: 2/20; }
       #container .portfolio .innerPortfolio .titleWorks {
@@ -143,7 +147,7 @@
           grid-column: 1/17;
           text-align: left; }
           #container .experience-contact .experience .innerExperience .firstJob .info .year {
-            grid-row: 11/12;
+            grid-row: 12/13;
             letter-spacing: 1px; }
           #container .experience-contact .experience .innerExperience .firstJob .info .company {
             grid-row: 1/4; }
