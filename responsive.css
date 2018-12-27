@@ -1,7 +1,10 @@
 @media screen and (max-width: 1024px) {
-  #container .aboutMe-professional .floatContent .myImage img {
-    width: 100px;
-    height: 100px; }
+  #container .aboutMe-professional .floatContent .myImage {
+    grid-row: 3/7;
+    grid-column: 7/11; }
+    #container .aboutMe-professional .floatContent .myImage img {
+      width: 100px;
+      height: 100px; }
   #container .aboutMe-professional .floatContent .aboutMeF p {
     font-size: 14px; }
   #container .aboutMe-professional #professional .innerProfessional #titleProfessional h1 {
@@ -65,17 +68,34 @@
   #container .experience-contact #contact {
     grid-row: 12/21;
     grid-column: 3/19; } }
+@media screen and (max-width: 650px) {
+  #container .aboutMe-professional .aboutMe .innerAboutMe .name {
+    grid-row: 4/8; }
+    #container .aboutMe-professional .aboutMe .innerAboutMe .name p {
+      font-size: 8.5vw; }
+  #container .aboutMe-professional .aboutMe .innerAboutMe .profession {
+    grid-row: 8/9; }
+    #container .aboutMe-professional .aboutMe .innerAboutMe .profession h2 {
+      font-size: 3.3vh; } }
+@media screen and (max-width: 500px) {
+  #container .aboutMe-professional .aboutMe .innerAboutMe .name {
+    grid-row: 4/7; }
+  #container .aboutMe-professional .aboutMe .innerAboutMe .profession {
+    grid-row: 7/8; } }
 @media screen and (max-width: 425px) {
   #container {
     grid-auto-rows: 330vh 150vh 230vh 70px; }
     #container .aboutMe-professional .aboutMe .innerAboutMe {
-      grid-column: 2/20; }
+      grid-column: 2/20;
+      grid-template-columns: repeat(8, 1fr); }
       #container .aboutMe-professional .aboutMe .innerAboutMe .name {
-        grid-row: 4/7; }
+        grid-row: 4/7;
+        grid-column: 1/9; }
         #container .aboutMe-professional .aboutMe .innerAboutMe .name p {
-          font-size: 6vh; }
+          font-size: 9vw; }
       #container .aboutMe-professional .aboutMe .innerAboutMe .profession {
-        grid-row: 7/8; }
+        grid-row: 7/8;
+        grid-column: 1/9; }
         #container .aboutMe-professional .aboutMe .innerAboutMe .profession h2 {
           line-height: 1.5; }
     #container .aboutMe-professional .floatContent {
@@ -175,11 +195,13 @@
         grid-row: 9/17;
         grid-column: 1/17; } }
 @media screen and (max-width: 360px) {
-  #container .aboutMe-professional .aboutMe .innerAboutMe {
-    grid-column: 2/20; }
-    #container .aboutMe-professional .aboutMe .innerAboutMe .name {
-      grid-row: 4/7; }
-      #container .aboutMe-professional .aboutMe .innerAboutMe .name p {
-        font-size: 5.5vh; } }
+  #container .aboutMe-professional .aboutMe .innerAboutMe .name {
+    grid-row: 4/7; }
+  #container .aboutMe-professional .floatContent .myImage img {
+    width: 85px;
+    height: 85px; }
+  #container .aboutMe-professional .floatContent .aboutMeF p {
+    font-size: 3.3vw;
+    line-height: 1.5; } }
 
 /*# sourceMappingURL=responsive.css.map */

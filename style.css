@@ -48,9 +48,11 @@
 
 #container {
   width: 100%;
+  max-width: 1440px;
   height: auto;
   display: grid;
-  grid-auto-rows: 330vh 100vh 230vh 70px; }
+  grid-auto-rows: 330vh 100vh 230vh 70px;
+  margin: 0 auto; }
   #container .aboutMe-professional, #container .experience-contact {
     width: 100%;
     display: grid;
@@ -103,11 +105,12 @@
       grid-template-rows: repeat(16, 1fr);
       grid-template-columns: repeat(16, 1fr); }
       #container .aboutMe-professional .floatContent .myImage, #container .experience-contact .floatContent .myImage {
-        grid-row: 3/6;
-        grid-column: 8/10;
+        grid-row: 3/7;
+        grid-column: 7/11;
         text-align: center; }
         #container .aboutMe-professional .floatContent .myImage img, #container .experience-contact .floatContent .myImage img {
-          width: 100%; }
+          width: 100px;
+          height: 100px; }
       #container .aboutMe-professional .floatContent .aboutMeF, #container .experience-contact .floatContent .aboutMeF {
         grid-row: 6/13;
         grid-column: 1/17;
@@ -119,7 +122,7 @@
         #container .aboutMe-professional .floatContent .aboutMeF p, #container .experience-contact .floatContent .aboutMeF p {
           grid-row: 3/9;
           grid-column: 4/14;
-          font-size: 16px;
+          font-size: 15px;
           color: #ffffff; }
       #container .aboutMe-professional .floatContent .downloadCv, #container .experience-contact .floatContent .downloadCv {
         grid-row: 13/15;
@@ -127,7 +130,8 @@
         background-color: transparent;
         border: 2px solid #0060C5;
         color: #ffffff;
-        font-weight: bold; }
+        font-weight: bold;
+        font-size: 12px; }
         #container .aboutMe-professional .floatContent .downloadCv:hover, #container .experience-contact .floatContent .downloadCv:hover {
           color: #91a0ba;
           cursor: pointer;

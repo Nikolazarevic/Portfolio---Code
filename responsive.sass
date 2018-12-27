@@ -3,6 +3,8 @@
 		.aboutMe-professional
 			.floatContent
 				.myImage
+					grid-row: 3/7
+					grid-column: 7/11
 					img
 						width: 100px
 						height: 100px
@@ -54,6 +56,7 @@
 					.infoLS
 						h4
 							font-size: 14px
+
 @media screen and (max-width: 768px)
 	#header
 		.nav
@@ -99,7 +102,28 @@
 			#contact	
 				grid-row: 12/21
 				grid-column: 3/19
-
+@media screen and (max-width: 650px)
+	#container
+		.aboutMe-professional
+			.aboutMe
+				.innerAboutMe
+					.name
+						grid-row: 4/8
+						p
+							font-size: 8.5vw
+					.profession
+						grid-row: 8/9
+						h2
+							font-size: 3.3vh
+@media screen and (max-width: 500px)
+	#container
+		.aboutMe-professional
+			.aboutMe
+				.innerAboutMe
+					.name
+						grid-row: 4/7
+					.profession
+						grid-row: 7/8
 @media screen and (max-width: 425px)
 	#container
 		grid-auto-rows: 330vh 150vh 230vh 70px
@@ -107,12 +131,15 @@
 			.aboutMe
 				.innerAboutMe
 					grid-column: 2/20
+					grid-template-columns: repeat(8, 1fr)
 					.name
 						grid-row: 4/7
+						grid-column: 1/9
 						p
-							font-size: 6vh
+							font-size: 9vw
 					.profession
 						grid-row: 7/8
+						grid-column: 1/9
 						h2
 							line-height: 1.5
 			.floatContent
@@ -221,8 +248,14 @@
 		.aboutMe-professional
 			.aboutMe
 				.innerAboutMe
-					grid-column: 2/20
 					.name
 						grid-row: 4/7
-						p
-							font-size: 5.5vh
+			.floatContent
+				.myImage
+					img
+						width: 85px
+						height: 85px
+				.aboutMeF
+					p
+						font-size: 3.3vw
+						line-height: 1.5
