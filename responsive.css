@@ -57,6 +57,12 @@
     #header .nav .active {
       display: block; }
 
+  #container .aboutMe-professional .aboutMe .innerAboutMe .name {
+    grid-row: 4/7; }
+    #container .aboutMe-professional .aboutMe .innerAboutMe .name p {
+      font-size: 9.5vw; }
+  #container .aboutMe-professional .aboutMe .innerAboutMe .profession {
+    grid-row: 7/9; }
   #container .aboutMe-professional .floatContent {
     grid-column: 3/19; }
   #container .aboutMe-professional #professional .innerProfessional #titleProfessional {
