@@ -151,6 +151,8 @@
     #container .experience-contact #contact .leftSide {
       grid-row: 1/9;
       grid-column: 1/17; }
+      #container .experience-contact #contact .leftSide .infoLS {
+        grid-row: 9/10; }
     #container .experience-contact #contact .rightSide {
       grid-row: 9/17;
       grid-column: 1/17; }
