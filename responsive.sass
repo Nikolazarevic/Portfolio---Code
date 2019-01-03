@@ -67,7 +67,6 @@
 					cursor: pointer
 					font-size: 30px
 					color: #ffffff
-
 			.navBar
 				display: none
 				width: 100%
@@ -96,6 +95,16 @@
 						grid-row: 7/9
 			.floatContent
 				grid-column: 3/19
+				.myImage
+					img
+						width: 120px
+						height: 120px
+				.aboutMeF
+					p
+						font-size: 20px
+				.downloadCv
+					grid-column: 6/12
+					font-size: 16px
 			#professional
 				.innerProfessional
 					#titleProfessional
@@ -106,10 +115,6 @@
 					grid-row: 4/7
 				.myWorks
 					grid-row: 8/13
-		.experience-contact
-			#contact	
-				grid-row: 12/21
-				grid-column: 3/19
 @media screen and (max-width: 650px)
 	#container
 		.aboutMe-professional
@@ -132,61 +137,6 @@
 						grid-row: 4/7
 					.profession
 						grid-row: 7/8
-@media screen and (max-width: 425px)
-	#container
-		grid-auto-rows: 330vh 150vh 230vh 70px
-		.aboutMe-professional
-			.aboutMe
-				.innerAboutMe
-					grid-column: 2/20
-					grid-template-columns: repeat(8, 1fr)
-					.name
-						grid-row: 4/7
-						grid-column: 1/9
-						p
-							font-size: 9vw
-					.profession
-						grid-row: 7/8
-						grid-column: 1/9
-						h2
-							line-height: 1.5
-			.floatContent
-				grid-column: 2/20
-				.myImage
-					grid-column: 6/12
-				.aboutMeF
-					p
-						grid-column: 3/15
-						font-size: 13px
-				.downloadCv
-					grid-column: 4/14
-			#professional
-				.innerProfessional
-					grid-column: 2/20
-					#titleProfessional
-						grid-row: 5/7
-						grid-column: 1/17
-						h1
-							font-size: 23px
-						h4
-							font-size: 20px
-					.knowledge
-						grid-column: 2/16
-						.progressBar
-							overflow: hidden
-							grid-row-gap: 1px
-							.title
-								grid-row: 1/2
-								grid-column: 1/17
-								text-align: left
-								font-size: 14px
-							.progress
-								grid-row: 2/4
-								grid-column: 1/14
-							.progressValue
-								grid-row: 2/4
-								grid-column: 15/17
-								font-size: 14px
 		.portfolio
 			.innerPortfolio
 				grid-column: 2/20
@@ -251,6 +201,131 @@
 				.rightSide
 					grid-row: 9/17
 					grid-column: 1/17
+					.innerRight
+						grid-row: 1/8
+						grid-column: 3/15
+@media screen and (max-width: 425px)
+	#container
+		grid-auto-rows: 330vh 150vh 230vh 70px
+		.aboutMe-professional
+			.aboutMe
+				.innerAboutMe
+					grid-column: 2/20
+					grid-template-columns: repeat(8, 1fr)
+					.name
+						grid-row: 4/7
+						grid-column: 1/9
+						p
+							font-size: 9vw
+					.profession
+						grid-row: 7/8
+						grid-column: 1/9
+						h2
+							line-height: 1.5
+			.floatContent
+				grid-column: 2/20
+				.myImage
+					grid-column: 6/12
+				.aboutMeF
+					p
+						grid-column: 3/15
+						font-size: 13px
+				.downloadCv
+					grid-column: 4/14
+			#professional
+				.innerProfessional
+					grid-column: 2/20
+					#titleProfessional
+						grid-row: 5/7
+						grid-column: 1/17
+						h1
+							font-size: 23px
+						h4
+							font-size: 20px
+					.knowledge
+						grid-column: 2/16
+						.progressBar
+							overflow: hidden
+							grid-row-gap: 1px
+							.title
+								grid-row: 1/2
+								grid-column: 1/17
+								text-align: left
+								font-size: 14px
+							.progress
+								grid-row: 2/4
+								grid-column: 1/14
+							.progressValue
+								grid-row: 2/4
+								grid-column: 15/17
+								font-size: 14px
+		// .portfolio
+		// 	.innerPortfolio
+		// 		grid-column: 2/20
+		// 		.titleWorks
+		// 			grid-row: 2/4
+		// 			grid-column: 1/17
+		// 			h1
+		// 				font-size: 25px
+		// 			h4
+		// 				font-size: 20px
+		// 		.myWorks
+		// 			grid-row: 4/17
+		// 			grid-template-rows: repeat(13, 1fr)
+		// 			.work1
+		// 				grid-row: 1/5
+		// 				grid-column: 1/22
+		// 			.work2
+		// 				grid-row: 5/9
+		// 				grid-column: 1/22
+		// 			.work3
+		// 				grid-row: 9/13
+		// 				grid-column: 1/22
+		.experience-contact
+			.experience
+				.innerExperience
+					grid-column: 2/20
+					#titleExperience
+						grid-column: 1/17
+						h1
+							font-size: 25px
+					.firstJob
+						grid-row: 3/8
+						grid-column: 1/17
+						.info
+							grid-column: 1/17
+							text-align: left
+							.year
+								grid-row: 12/13
+								letter-spacing: 1px
+							.company
+								grid-row: 1/4
+								h2
+									font-size: 23px
+									letter-spacing: 1px
+							.position
+								grid-row: 4/6
+								h3
+									font-size: 16px
+									letter-spacing: 1px
+							.description
+								grid-row: 6/10
+								p
+									font-size: 14px
+						.scale
+							display: none
+			#contact
+				grid-row: 8/22
+				grid-column: 2/20
+				.leftSide
+					grid-row: 1/9
+					grid-column: 1/17
+				.rightSide
+					grid-row: 9/17
+					grid-column: 1/17
+					.innerRight
+						grid-row: 1/8
+						grid-column: 3/15
 @media screen and (max-width: 360px)
 	#container
 		.aboutMe-professional
