@@ -152,13 +152,15 @@
 					grid-template-rows: repeat(13, 1fr)
 					.work1
 						grid-row: 1/5
-						grid-column: 1/22
+						grid-column: 2/21
+						.imag
+							overflow: hidden
 					.work2
+						@extend .work1
 						grid-row: 5/9
-						grid-column: 1/22
 					.work3
+						@extend .work1
 						grid-row: 9/13
-						grid-column: 1/22
 		.experience-contact
 			.experience
 				.innerExperience

@@ -105,15 +105,15 @@
     #container .portfolio .innerPortfolio .myWorks {
       grid-row: 4/17;
       grid-template-rows: repeat(13, 1fr); }
-      #container .portfolio .innerPortfolio .myWorks .work1 {
+      #container .portfolio .innerPortfolio .myWorks .work1, #container .portfolio .innerPortfolio .myWorks .work2, #container .portfolio .innerPortfolio .myWorks .work3 {
         grid-row: 1/5;
-        grid-column: 1/22; }
+        grid-column: 2/21; }
+        #container .portfolio .innerPortfolio .myWorks .work1 .imag, #container .portfolio .innerPortfolio .myWorks .work2 .imag, #container .portfolio .innerPortfolio .myWorks .work3 .imag {
+          overflow: hidden; }
       #container .portfolio .innerPortfolio .myWorks .work2 {
-        grid-row: 5/9;
-        grid-column: 1/22; }
+        grid-row: 5/9; }
       #container .portfolio .innerPortfolio .myWorks .work3 {
-        grid-row: 9/13;
-        grid-column: 1/22; }
+        grid-row: 9/13; }
   #container .experience-contact .experience .innerExperience {
     grid-column: 2/20; }
     #container .experience-contact .experience .innerExperience #titleExperience {

@@ -406,20 +406,20 @@
         grid-template-columns: repeat(16, 1fr); }
         #container .experience-contact #contact .leftSide .titleLS {
           grid-row: 3/4;
-          grid-column: 4/10;
+          grid-column: 3/10;
           align-self: center; }
           #container .experience-contact #contact .leftSide .titleLS h2 {
             color: #ffffff;
             font-size: 25px; }
         #container .experience-contact #contact .leftSide .contentLS {
           grid-row: 5/8;
-          grid-column: 4/14; }
+          grid-column: 3/14; }
           #container .experience-contact #contact .leftSide .contentLS p {
             color: #ffffff;
             font-size: 17px; }
         #container .experience-contact #contact .leftSide .infoLS {
           grid-row: 8/9;
-          grid-column: 4/10;
+          grid-column: 3/10;
           display: grid;
           grid-row-gap: 10px; }
           #container .experience-contact #contact .leftSide .infoLS h4 {
