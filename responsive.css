@@ -328,6 +328,10 @@
     font-size: 3.3vw;
     line-height: 1.5; }
   #container #portfolio .innerPortfolio .myWorks .work {
-    grid-column: 4/19; } }
+    grid-column: 4/19; }
+    #container #portfolio .innerPortfolio .myWorks .work .mask p {
+      grid-column: 2/10; }
+    #container #portfolio .innerPortfolio .myWorks .work .mask .btnView {
+      grid-column: 3/9; } }
 
 /*# sourceMappingURL=responsive.css.map */
