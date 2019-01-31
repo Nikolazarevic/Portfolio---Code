@@ -25,7 +25,7 @@
       width: 100%;
       padding: 0 20px;
       box-sizing: border-box;
-      color: #000000;
+      color: red;
       display: none; }
     #header .nav .navBar {
       height: 100%;
@@ -205,66 +205,70 @@
               text-align: center;
               color: #ffffff;
               align-self: center; }
-  #container .portfolio {
+  #container #portfolio {
     width: 100%;
     text-align: center;
     background-color: #171C25;
     display: grid;
     grid-template-columns: repeat(20, 1fr);
     grid-template-rows: repeat(1, 1fr); }
-    #container .portfolio .innerPortfolio {
+    #container #portfolio .innerPortfolio {
       grid-row: 1/2;
       grid-column: 3/19;
       display: grid;
       grid-template-columns: repeat(16, 1fr);
       grid-template-rows: repeat(16, 1fr);
       overflow: hidden; }
-      #container .portfolio .innerPortfolio .titleWorks {
+      #container #portfolio .innerPortfolio .titleWorks {
         grid-row: 3/6;
         grid-column: 3/15;
         text-align: center; }
-        #container .portfolio .innerPortfolio .titleWorks h1 {
+        #container #portfolio .innerPortfolio .titleWorks h1 {
           font-size: 45px;
           font-weight: 900;
           font-family: "Open Sans";
           letter-spacing: 6px;
           color: #ffffff; }
-          #container .portfolio .innerPortfolio .titleWorks h1 span {
+          #container #portfolio .innerPortfolio .titleWorks h1 span {
             color: #B4C2D1; }
-        #container .portfolio .innerPortfolio .titleWorks h4 {
-          font-size: 20px;
+        #container #portfolio .innerPortfolio .titleWorks h4 {
+          font-size: 25px;
           letter-spacing: 2px;
           color: #ffffff;
-          margin-top: 10px; }
-          #container .portfolio .innerPortfolio .titleWorks h4 a {
+          margin-top: 10px;
+          font-weight: lighter;
+          font-family: "Open Sans"; }
+          #container #portfolio .innerPortfolio .titleWorks h4 a {
             text-decoration: none; }
-            #container .portfolio .innerPortfolio .titleWorks h4 a span {
+            #container #portfolio .innerPortfolio .titleWorks h4 a span {
+              font-size: 20px;
               color: #B4C2D1; }
-              #container .portfolio .innerPortfolio .titleWorks h4 a span:hover {
+              #container #portfolio .innerPortfolio .titleWorks h4 a span:hover {
                 text-decoration: underline; }
-      #container .portfolio .innerPortfolio .myWorks {
-        grid-row: 7/15;
+      #container #portfolio .innerPortfolio .myWorks {
+        grid-row: 8/15;
         grid-column: 1/17;
         display: grid;
         grid-template-rows: repeat(10, 1fr);
         grid-template-columns: repeat(21, 1fr); }
-        #container .portfolio .innerPortfolio .myWorks .work {
+        #container #portfolio .innerPortfolio .myWorks .work {
           display: grid;
           grid-template-rows: repeat(1, 1fr);
           grid-template-columns: repeat(1, 1fr); }
-        #container .portfolio .innerPortfolio .myWorks .work1, #container .portfolio .innerPortfolio .myWorks .work2, #container .portfolio .innerPortfolio .myWorks .work3 {
+        #container #portfolio .innerPortfolio .myWorks .work1, #container #portfolio .innerPortfolio .myWorks .work2, #container #portfolio .innerPortfolio .myWorks .work3 {
           grid-row: 1/11;
           grid-column: 1/8; }
-          #container .portfolio .innerPortfolio .myWorks .work1:hover, #container .portfolio .innerPortfolio .myWorks .work2:hover, #container .portfolio .innerPortfolio .myWorks .work3:hover {
+          #container #portfolio .innerPortfolio .myWorks .work1:hover, #container #portfolio .innerPortfolio .myWorks .work2:hover, #container #portfolio .innerPortfolio .myWorks .work3:hover {
             cursor: pointer; }
-          #container .portfolio .innerPortfolio .myWorks .work1 .imag, #container .portfolio .innerPortfolio .myWorks .work2 .imag, #container .portfolio .innerPortfolio .myWorks .work3 .imag {
+          #container #portfolio .innerPortfolio .myWorks .work1 .imag, #container #portfolio .innerPortfolio .myWorks .work2 .imag, #container #portfolio .innerPortfolio .myWorks .work3 .imag {
             grid-row: 1/2;
             grid-column: 1/2;
-            z-index: 1; }
-            #container .portfolio .innerPortfolio .myWorks .work1 .imag img, #container .portfolio .innerPortfolio .myWorks .work2 .imag img, #container .portfolio .innerPortfolio .myWorks .work3 .imag img {
+            z-index: 1;
+            overflow: hidden; }
+            #container #portfolio .innerPortfolio .myWorks .work1 .imag img, #container #portfolio .innerPortfolio .myWorks .work2 .imag img, #container #portfolio .innerPortfolio .myWorks .work3 .imag img {
               width: 100%;
               height: 100%; }
-          #container .portfolio .innerPortfolio .myWorks .work1 .mask, #container .portfolio .innerPortfolio .myWorks .work2 .mask, #container .portfolio .innerPortfolio .myWorks .work3 .mask {
+          #container #portfolio .innerPortfolio .myWorks .work1 .mask, #container #portfolio .innerPortfolio .myWorks .work2 .mask, #container #portfolio .innerPortfolio .myWorks .work3 .mask {
             grid-row: 1/2;
             grid-column: 1/2;
             background-color: rgba(0, 0, 0, 0.8);
@@ -275,24 +279,24 @@
             grid-template-rows: repeat(10, 1fr);
             grid-template-columns: repeat(10, 1fr);
             overflow: hidden; }
-            #container .portfolio .innerPortfolio .myWorks .work1 .mask h4, #container .portfolio .innerPortfolio .myWorks .work2 .mask h4, #container .portfolio .innerPortfolio .myWorks .work3 .mask h4 {
+            #container #portfolio .innerPortfolio .myWorks .work1 .mask h4, #container #portfolio .innerPortfolio .myWorks .work2 .mask h4, #container #portfolio .innerPortfolio .myWorks .work3 .mask h4 {
               font-size: 28px;
               color: #ffffff;
-              grid-row: 5/7;
-              grid-column: 3/9;
+              grid-row: 2/3;
+              grid-column: 2/10;
               align-self: center; }
-              #container .portfolio .innerPortfolio .myWorks .work1 .mask h4:hover, #container .portfolio .innerPortfolio .myWorks .work2 .mask h4:hover, #container .portfolio .innerPortfolio .myWorks .work3 .mask h4:hover {
+              #container #portfolio .innerPortfolio .myWorks .work1 .mask h4:hover, #container #portfolio .innerPortfolio .myWorks .work2 .mask h4:hover, #container #portfolio .innerPortfolio .myWorks .work3 .mask h4:hover {
                 color: #90a5bb;
                 color: #B4C2D1; }
-            #container .portfolio .innerPortfolio .myWorks .work1 .mask p, #container .portfolio .innerPortfolio .myWorks .work2 .mask p, #container .portfolio .innerPortfolio .myWorks .work3 .mask p {
-              font-size: 14px;
+            #container #portfolio .innerPortfolio .myWorks .work1 .mask p, #container #portfolio .innerPortfolio .myWorks .work2 .mask p, #container #portfolio .innerPortfolio .myWorks .work3 .mask p {
+              font-size: 16px;
               color: #ffffff;
-              grid-row: 5/8;
+              grid-row: 4/9;
               grid-column: 3/9;
-              overflow: hidden;
-              display: none; }
-            #container .portfolio .innerPortfolio .myWorks .work1 .mask .btnView, #container .portfolio .innerPortfolio .myWorks .work2 .mask .btnView, #container .portfolio .innerPortfolio .myWorks .work3 .mask .btnView {
-              display: none;
+              overflow: hidden; }
+              #container #portfolio .innerPortfolio .myWorks .work1 .mask p span, #container #portfolio .innerPortfolio .myWorks .work2 .mask p span, #container #portfolio .innerPortfolio .myWorks .work3 .mask p span {
+                font-size: 13px; }
+            #container #portfolio .innerPortfolio .myWorks .work1 .mask .btnView, #container #portfolio .innerPortfolio .myWorks .work2 .mask .btnView, #container #portfolio .innerPortfolio .myWorks .work3 .mask .btnView {
               grid-row: 9/10;
               grid-column: 4/8;
               color: #ffffff;
@@ -301,12 +305,12 @@
               font-size: 12px;
               background: transparent;
               cursor: pointer; }
-              #container .portfolio .innerPortfolio .myWorks .work1 .mask .btnView:hover, #container .portfolio .innerPortfolio .myWorks .work2 .mask .btnView:hover, #container .portfolio .innerPortfolio .myWorks .work3 .mask .btnView:hover {
+              #container #portfolio .innerPortfolio .myWorks .work1 .mask .btnView:hover, #container #portfolio .innerPortfolio .myWorks .work2 .mask .btnView:hover, #container #portfolio .innerPortfolio .myWorks .work3 .mask .btnView:hover {
                 background-color: rgba(0, 0, 0, 0.4);
                 color: #B4C2D1; }
-        #container .portfolio .innerPortfolio .myWorks .work2 {
+        #container #portfolio .innerPortfolio .myWorks .work2 {
           grid-column: 8/15; }
-        #container .portfolio .innerPortfolio .myWorks .work3 {
+        #container #portfolio .innerPortfolio .myWorks .work3 {
           grid-column: 15/22; }
   #container .experience-contact {
     grid-template-rows: repeat(30, 1fr); }
@@ -332,7 +336,7 @@
         overflow: hidden; }
         #container .experience-contact .experience .innerExperience #titleExperience {
           grid-row: 1/3;
-          grid-column: 5/13;
+          grid-column: 3/15;
           text-align: center; }
           #container .experience-contact .experience .innerExperience #titleExperience h1 {
             font-size: 45px;
@@ -343,7 +347,7 @@
             #container .experience-contact .experience .innerExperience #titleExperience h1 span {
               color: #B4C2D1; }
         #container .experience-contact .experience .innerExperience .firstJob {
-          grid-row: 4/12;
+          grid-row: 4/11;
           grid-column: 3/15;
           display: grid;
           grid-template-rows: repeat(10, 1fr);
@@ -361,13 +365,13 @@
               color: #006699;
               font-size: 16px; }
             #container .experience-contact .experience .innerExperience .firstJob .info .company {
-              grid-row: 5/6;
+              grid-row: 4/5;
               font-size: 20px; }
             #container .experience-contact .experience .innerExperience .firstJob .info .position {
-              grid-row: 7/8;
+              grid-row: 6/7;
               font-size: 16px; }
             #container .experience-contact .experience .innerExperience .firstJob .info .description {
-              grid-row: 8/12;
+              grid-row: 7/12;
               font-size: 16px; }
           #container .experience-contact .experience .innerExperience .firstJob .scale {
             grid-row: 1/11;
@@ -485,14 +489,22 @@
         grid-column: 1/17;
         text-align: center;
         align-self: center; }
-        #container .experience-contact #contact .bottom img {
-          margin-right: 25px; }
-          #container .experience-contact #contact .bottom img:hover {
-            cursor: pointer; }
+        #container .experience-contact #contact .bottom .fab {
+          color: #ffffff;
+          margin-right: 25px;
+          font-size: 23px; }
+          #container .experience-contact #contact .bottom .fab:hover {
+            cursor: pointer;
+            color: #91a0ba; }
+    #container .experience-contact .bcgF {
+      grid-row: 16/31;
+      grid-column: 1/21;
+      background-image: linear-gradient(#171C25, rgba(23, 28, 37, 0.6));
+      z-index: 2; }
     #container .experience-contact .bcgFooter {
       grid-row: 16/31;
       grid-column: 1/21;
-      background-image: url("Images/Web-Design-Wallpapers-1-1.png");
+      background-image: url("Images/office_11.jpg");
       background-size: 100% 100%;
       background-attachment: fixed;
       display: grid;
@@ -507,7 +519,7 @@
     align-self: center; }
     #container .footer p {
       color: #ffffff;
-      font-size: 12px;
+      font-size: 13px;
       font-family: "Open Sans";
       line-height: 70px; }
 
