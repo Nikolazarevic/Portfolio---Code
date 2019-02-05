@@ -103,6 +103,8 @@
         font-size: 35px; }
       #container #portfolio .innerPortfolio .titleWorks h4 {
         font-size: 20px; }
+        #container #portfolio .innerPortfolio .titleWorks h4 a span {
+          font-size: 17px; }
     #container #portfolio .innerPortfolio .myWorks {
       grid-row: 9/15; }
       #container #portfolio .innerPortfolio .myWorks .work .mask h4 {
@@ -167,6 +169,8 @@
           font-size: 25px; }
         #container #portfolio .innerPortfolio .titleWorks h4 {
           font-size: 17px; }
+          #container #portfolio .innerPortfolio .titleWorks h4 a span {
+            font-size: 14px; }
       #container #portfolio .innerPortfolio .myWorks {
         grid-row: 5/17;
         grid-template-rows: repeat(13, 1fr); }
