@@ -53,7 +53,9 @@
       #header .nav .toggle i {
         cursor: pointer;
         font-size: 30px;
-        color: #ffffff; }
+        background: -webkit-linear-gradient(#fd9d51, #ff6197);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
     #header .nav .navBar {
       display: none;
       width: 100%;
