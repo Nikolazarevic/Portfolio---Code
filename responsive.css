@@ -141,10 +141,13 @@
   #container .aboutMe-professional .aboutMe .innerAboutMe .profession {
     grid-row: 8/9; }
     #container .aboutMe-professional .aboutMe .innerAboutMe .profession h2 {
-      font-size: 3.3vh; } }
+      font-size: 3.3vh; }
+  #container .experience-contact .bcgFooter {
+    background-size: 170% 100%;
+    background-position: center; } }
 @media screen and (max-width: 500px) {
   #container {
-    grid-auto-rows: 330vh 140vh 230vh 70px; }
+    grid-auto-rows: 330vh 140vh 200vh 115px; }
     #container .aboutMe-professional .aboutMe .innerAboutMe .name {
       grid-row: 4/7; }
     #container .aboutMe-professional .aboutMe .innerAboutMe .profession {
@@ -217,22 +220,38 @@
         #container .experience-contact .experience .innerExperience .firstJob .scale {
           display: none; }
     #container .experience-contact #contact {
-      grid-row: 8/22;
+      grid-row: 8/23;
       grid-column: 2/20; }
       #container .experience-contact #contact .leftSide {
-        grid-row: 1/9;
-        grid-column: 1/17; }
+        grid-row: 1/8;
+        grid-column: 1/17;
+        text-align: center;
+        grid-template-rows: repeat(9, 1fr); }
+        #container .experience-contact #contact .leftSide .titleLS {
+          grid-row: 2/3;
+          grid-column: 5/13; }
+        #container .experience-contact #contact .leftSide .contentLS {
+          grid-row: 4/6;
+          grid-column: 3/15; }
         #container .experience-contact #contact .leftSide .infoLS {
-          grid-row: 9/10; }
+          grid-row: 7/9;
+          grid-column: 5/13; }
       #container .experience-contact #contact .rightSide {
-        grid-row: 9/17;
+        grid-row: 8/15;
         grid-column: 1/17; }
         #container .experience-contact #contact .rightSide .innerRight {
-          grid-row: 1/8;
-          grid-column: 3/15; } }
+          grid-row: 1/11;
+          grid-column: 3/15; }
+      #container .experience-contact #contact .bottom {
+        grid-row: 15/17; }
+    #container .experience-contact .bcgFooter {
+      background-size: 200% 100%;
+      background-position: center; }
+    #container .footer p {
+      line-height: 115px; } }
 @media screen and (max-width: 425px) {
   #container {
-    grid-auto-rows: 330vh 150vh 230vh 70px; }
+    grid-auto-rows: 330vh 150vh 200vh 115px; }
     #container .aboutMe-professional .aboutMe .innerAboutMe {
       grid-column: 2/20;
       grid-template-columns: repeat(8, 1fr); }
@@ -281,49 +300,53 @@
             grid-row: 2/4;
             grid-column: 15/17;
             font-size: 14px; }
-    #container .experience-contact .experience .innerExperience {
-      grid-column: 2/20; }
-      #container .experience-contact .experience .innerExperience #titleExperience {
-        grid-column: 1/17; }
-        #container .experience-contact .experience .innerExperience #titleExperience h1 {
-          font-size: 25px; }
-      #container .experience-contact .experience .innerExperience .firstJob {
-        grid-row: 3/8;
-        grid-column: 1/17; }
-        #container .experience-contact .experience .innerExperience .firstJob .info {
-          grid-column: 1/17;
-          text-align: left; }
-          #container .experience-contact .experience .innerExperience .firstJob .info .year {
-            grid-row: 12/13;
-            letter-spacing: 1px; }
-          #container .experience-contact .experience .innerExperience .firstJob .info .company {
-            grid-row: 1/4; }
-            #container .experience-contact .experience .innerExperience .firstJob .info .company h2 {
-              font-size: 23px;
+    #container .experience-contact {
+      grid-template-rows: repeat(24, 1fr); }
+      #container .experience-contact .experience .innerExperience {
+        grid-column: 2/20; }
+        #container .experience-contact .experience .innerExperience #titleExperience {
+          grid-column: 1/17; }
+          #container .experience-contact .experience .innerExperience #titleExperience h1 {
+            font-size: 25px; }
+        #container .experience-contact .experience .innerExperience .firstJob {
+          grid-row: 3/8;
+          grid-column: 1/17; }
+          #container .experience-contact .experience .innerExperience .firstJob .info {
+            grid-column: 1/17;
+            text-align: left; }
+            #container .experience-contact .experience .innerExperience .firstJob .info .year {
+              grid-row: 12/13;
               letter-spacing: 1px; }
-          #container .experience-contact .experience .innerExperience .firstJob .info .position {
-            grid-row: 4/6; }
-            #container .experience-contact .experience .innerExperience .firstJob .info .position h3 {
-              font-size: 16px;
-              letter-spacing: 1px; }
-          #container .experience-contact .experience .innerExperience .firstJob .info .description {
-            grid-row: 6/10; }
-            #container .experience-contact .experience .innerExperience .firstJob .info .description p {
-              font-size: 14px; }
-        #container .experience-contact .experience .innerExperience .firstJob .scale {
-          display: none; }
-    #container .experience-contact #contact {
-      grid-row: 8/22;
-      grid-column: 2/20; }
-      #container .experience-contact #contact .leftSide {
-        grid-row: 1/9;
-        grid-column: 1/17; }
+            #container .experience-contact .experience .innerExperience .firstJob .info .company {
+              grid-row: 1/4; }
+              #container .experience-contact .experience .innerExperience .firstJob .info .company h2 {
+                font-size: 23px;
+                letter-spacing: 1px; }
+            #container .experience-contact .experience .innerExperience .firstJob .info .position {
+              grid-row: 4/6; }
+              #container .experience-contact .experience .innerExperience .firstJob .info .position h3 {
+                font-size: 16px;
+                letter-spacing: 1px; }
+            #container .experience-contact .experience .innerExperience .firstJob .info .description {
+              grid-row: 6/10; }
+              #container .experience-contact .experience .innerExperience .firstJob .info .description p {
+                font-size: 14px; }
+          #container .experience-contact .experience .innerExperience .firstJob .scale {
+            display: none; }
       #container .experience-contact #contact .rightSide {
-        grid-row: 9/17;
-        grid-column: 1/17; }
-        #container .experience-contact #contact .rightSide .innerRight {
-          grid-row: 1/8;
-          grid-column: 3/15; } }
+        grid-row: 8/16; }
+      #container .experience-contact #contact .bottom {
+        display: none; }
+      #container .experience-contact .bcgF {
+        grid-row: 16/25; }
+      #container .experience-contact .bcgFooter {
+        grid-row: 16/25;
+        background-size: 260% 100%;
+        background-position: center; }
+      #container .experience-contact .FolowMe {
+        grid-row: 23/25;
+        display: block;
+        align-self: center; } }
 @media screen and (max-width: 360px) {
   #container .aboutMe-professional .aboutMe .innerAboutMe .name {
     grid-row: 4/7; }
@@ -338,6 +361,9 @@
     #container #portfolio .innerPortfolio .myWorks .work .mask p {
       grid-column: 2/10; }
     #container #portfolio .innerPortfolio .myWorks .work .mask .btnView {
-      grid-column: 3/9; } }
+      grid-column: 3/9; }
+  #container .experience-contact .bcgFooter {
+    background-size: 280% 100%;
+    background-position: center; } }
 
 /*# sourceMappingURL=responsive.css.map */

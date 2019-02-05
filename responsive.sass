@@ -200,9 +200,13 @@
 						grid-row: 8/9
 						h2
 							font-size: 3.3vh
+		.experience-contact
+			.bcgFooter
+				background-size: 170% 100%
+				background-position: center		
 @media screen and (max-width: 500px)
 	#container
-		grid-auto-rows: 330vh 140vh 230vh 70px
+		grid-auto-rows: 330vh 140vh 200vh 115px
 		.aboutMe-professional
 			.aboutMe
 				.innerAboutMe
@@ -292,22 +296,39 @@
 						.scale
 							display: none
 			#contact
-				grid-row: 8/22
+				grid-row: 8/23
 				grid-column: 2/20
 				.leftSide
-					grid-row: 1/9
+					grid-row: 1/8
 					grid-column: 1/17
+					text-align: center
+					grid-template-rows: repeat(9, 1fr)
+					.titleLS
+						grid-row: 2/3
+						grid-column: 5/13
+					.contentLS
+						grid-row: 4/6
+						grid-column: 3/15
 					.infoLS
-						grid-row: 9/10
+						grid-row: 7/9
+						grid-column: 5/13
 				.rightSide
-					grid-row: 9/17
+					grid-row: 8/15
 					grid-column: 1/17
 					.innerRight
-						grid-row: 1/8
+						grid-row: 1/11
 						grid-column: 3/15
+				.bottom
+					grid-row: 15/17
+			.bcgFooter
+				background-size: 200% 100%
+				background-position: center
+		.footer
+			p
+				line-height: 115px	
 @media screen and (max-width: 425px)
 	#container
-		grid-auto-rows: 330vh 150vh 230vh 70px
+		grid-auto-rows: 330vh 150vh 200vh 115px
 		.aboutMe-professional
 			.aboutMe
 				.innerAboutMe
@@ -361,6 +382,7 @@
 								grid-column: 15/17
 								font-size: 14px
 		.experience-contact
+			grid-template-rows: repeat(24, 1fr)
 			.experience
 				.innerExperience
 					grid-column: 2/20
@@ -394,17 +416,20 @@
 						.scale
 							display: none
 			#contact
-				grid-row: 8/22
-				grid-column: 2/20
-				.leftSide
-					grid-row: 1/9
-					grid-column: 1/17
 				.rightSide
-					grid-row: 9/17
-					grid-column: 1/17
-					.innerRight
-						grid-row: 1/8
-						grid-column: 3/15
+					grid-row: 8/16
+				.bottom
+					display: none
+			.bcgF
+				grid-row: 16/25
+			.bcgFooter
+				grid-row: 16/25
+				background-size: 260% 100%
+				background-position: center
+			.FolowMe
+				grid-row: 23/25
+				display: block
+				align-self: center
 @media screen and (max-width: 360px)
 	#container
 		.aboutMe-professional
@@ -431,3 +456,7 @@
 								grid-column: 2/10
 							.btnView
 								grid-column: 3/9
+		.experience-contact
+			.bcgFooter
+				background-size: 280% 100%
+				background-position: center	
