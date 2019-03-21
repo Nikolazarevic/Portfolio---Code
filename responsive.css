@@ -73,13 +73,11 @@
     #header .nav .active {
       display: block; }
 
-  #container .aboutMe-professional .aboutMe .innerAboutMe .name {
-    grid-row: 3/8; }
-    #container .aboutMe-professional .aboutMe .innerAboutMe .name p {
+  #container .aboutMe-professional .aboutMe .innerAboutMe .bio {
+    grid-row: 4/8; }
+    #container .aboutMe-professional .aboutMe .innerAboutMe .bio .name {
       font-size: 7.5vw; }
-  #container .aboutMe-professional .aboutMe .innerAboutMe .profession {
-    grid-row: 8/9; }
-    #container .aboutMe-professional .aboutMe .innerAboutMe .profession h2 {
+    #container .aboutMe-professional .aboutMe .innerAboutMe .bio .profession {
       font-size: 3.3vh; }
   #container .aboutMe-professional .floatContent {
     grid-column: 3/19; }
@@ -134,13 +132,11 @@
   #container .experience-contact #contact .leftSide .infoLS h4 {
     font-size: 14px; } }
 @media screen and (max-width: 650px) {
-  #container .aboutMe-professional .aboutMe .innerAboutMe .name {
+  #container .aboutMe-professional .aboutMe .innerAboutMe .bio {
     grid-row: 4/8; }
-    #container .aboutMe-professional .aboutMe .innerAboutMe .name p {
+    #container .aboutMe-professional .aboutMe .innerAboutMe .bio .name {
       font-size: 8.5vw; }
-  #container .aboutMe-professional .aboutMe .innerAboutMe .profession {
-    grid-row: 8/9; }
-    #container .aboutMe-professional .aboutMe .innerAboutMe .profession h2 {
+    #container .aboutMe-professional .aboutMe .innerAboutMe .bio .profession {
       font-size: 3.3vh; }
   #container .experience-contact .bcgFooter {
     background-size: 170% 100%;
@@ -148,10 +144,12 @@
 @media screen and (max-width: 500px) {
   #container {
     grid-auto-rows: 330vh 140vh 200vh 115px; }
-    #container .aboutMe-professional .aboutMe .innerAboutMe .name {
+    #container .aboutMe-professional .aboutMe .innerAboutMe .bio {
       grid-row: 4/7; }
-    #container .aboutMe-professional .aboutMe .innerAboutMe .profession {
-      grid-row: 7/8; }
+      #container .aboutMe-professional .aboutMe .innerAboutMe .bio .name {
+        font-size: 8.3vw; }
+      #container .aboutMe-professional .aboutMe .innerAboutMe .bio .profession {
+        font-size: 3.1vh; }
     #container .aboutMe-professional .floatContent .myImage img {
       width: 80px;
       height: 80px; }
@@ -255,15 +253,14 @@
     #container .aboutMe-professional .aboutMe .innerAboutMe {
       grid-column: 2/20;
       grid-template-columns: repeat(8, 1fr); }
-      #container .aboutMe-professional .aboutMe .innerAboutMe .name {
+      #container .aboutMe-professional .aboutMe .innerAboutMe .bio {
         grid-row: 4/7;
         grid-column: 1/9; }
-        #container .aboutMe-professional .aboutMe .innerAboutMe .name p {
+        #container .aboutMe-professional .aboutMe .innerAboutMe .bio .name {
           font-size: 9vw; }
-      #container .aboutMe-professional .aboutMe .innerAboutMe .profession {
-        grid-row: 7/8;
-        grid-column: 1/9; }
-        #container .aboutMe-professional .aboutMe .innerAboutMe .profession h2 {
+        #container .aboutMe-professional .aboutMe .innerAboutMe .bio .profession {
+          grid-row: 7/8;
+          grid-column: 1/9;
           line-height: 1.5; }
     #container .aboutMe-professional .floatContent {
       grid-column: 2/20; }
